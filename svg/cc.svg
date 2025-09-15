@@ -1,0 +1,26 @@
+<svg width="25" height="25" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <rect width="25" height="25" rx="15" fill="#2d2d2d" />
+
+  <path d="M 15 85 Q 50 95 85 85" stroke="#cccccc" stroke-width="3" fill="none" />
+
+  <path d="M 20 80 L 25 45 Q 50 30 75 45 L 80 80 Z" fill="#ffffff" />
+  
+  <path d="M 78 65 C 90 65 90 50 78 50" stroke="#ffffff" stroke-width="5" fill="none" stroke-linecap="round" />
+
+  <ellipse cx="50" cy="45" rx="25" ry="8" fill="#c4a386" />
+
+  <g stroke="#b0b0b0" stroke-width="2.5" stroke-linecap="round" fill="none">
+    <path d="M 40 35 C 45 25 35 15 40 5">
+      <animateTransform attributeName="transform" type="translate" values="0 0; 0 -5; 0 0" dur="2s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0; 1; 1; 0" dur="2s" repeatCount="indefinite" />
+    </path>
+    <path d="M 50 38 C 45 28 55 18 50 8">
+      <animateTransform attributeName="transform" type="translate" values="0 0; 0 -7; 0 0" dur="1.8s" begin="0.5s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0; 1; 1; 0" dur="1.8s" begin="0.5s" repeatCount="indefinite" />
+    </path>
+    <path d="M 60 35 C 65 25 55 15 60 5">
+      <animateTransform attributeName="transform" type="translate" values="0 0; 0 -6; 0 0" dur="2.2s" begin="1s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0; 1; 1; 0" dur="2.2s" begin="1s" repeatCount="indefinite" />
+    </path>
+  </g>
+</svg>
