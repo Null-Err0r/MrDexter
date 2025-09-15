@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200" data-app="Xyris">
+    <defs>
+    </defs>
+    <rect fill="rgb(24, 24, 24)" stroke="rgb(79, 79, 79)" stroke-width="1" x="4" width="192" height="192" y="4">
+    </rect>
+    <line stroke="rgb(79, 79, 79)" stroke-width="1" x1="100" y1="4" x2="100" y2="196" id="line-mfZQScFtaSBX3pSqgGyNBL">
+    </line>
+    <line stroke="rgb(79, 79, 79)" stroke-width="1" x1="4" y1="100" x2="196" y2="100" id="line-gsdrFyXg6XN7YN4kK6tA7t">
+    </line>
+    <line stroke="rgb(79, 79, 79)" stroke-width="1" x1="196" y1="4" x2="4" y2="196" id="line-cUSeiDjDnxqJot1DhDw5hY">
+    </line>
+    <line stroke="rgb(127, 127, 127)" stroke-width="1" x1="196" y1="4" x2="52" y2="41" stroke-dasharray="2 2" id="line-eFgQyECLASWBybnHZv3xDb">
+        <animate attributeName="x1" keyTimes="0; 0.25018764073054794; 0.49920773913768657; 0.751563672754566; 1" values="196; 196; 196; 196; 196" begin="-0.00002" dur="11.991039999999998" fill="freeze" calcMode="spline" keySplines="0 0 1 1; 0 0 1 1; 0 0 1 1; 0 0 1 1" repeatCount="indefinite">
+        </animate>
+        <animate attributeName="y1" keyTimes="0; 0.25018764073054794; 0.49920773913768657; 0.751563672754566; 1" values="4; 4; 4; 4; 4" begin="-0.00002" dur="11.991039999999998" fill="freeze" calcMode="spline" keySplines="0 0 1 1; 0 0 1 1; 0 0 1 1; 0 0 1 1" repeatCount="indefinite">
+        </animate>
+        <animate attributeName="x2" keyTimes="0; 0.25018764073054794; 0.49920773913768657; 0.751563672754566; 1" values="52.23951729671694; 148.478436372288; 149.17363836195142; 148.478436372288; 52.23951729671694" begin="-0.00002" dur="11.991039999999998" fill="freeze" calcMode="spline" keySplines="0 0 1 1; 0 0 1 1; 0 0 1 1; 0 0 1 1" repeatCount="indefinite">
+        </animate>
+        <animate attributeName="y2" keyTimes="0; 0.25018764073054794; 0.49920773913768657; 0.751563672754566; 1" values="51.77844053399784; 52.163858287279; 146.77258696756257; 52.163858287279; 51.77844053399784" begin="-0.00002" dur="11.991039999999998" fill="freeze" calcMode="spline" keySplines="0 0 1 1; 0 0 1 1; 0 0 1 1; 0 0 1 1" repeatCount="indefinite">
+        </animate>
+    </line>
+    <line stroke="rgb(127, 127, 127)" stroke-width="1" x1="4" y1="196" x2="142.83078002929688" y2="144.87693786621094" stroke-dasharray="2 2" id="line-76tmRUoUM3RZ1aZ5Me1ym1">
+        <animate attributeName="x1" keyTimes="0; 0.25018764073054794; 0.49920773913768657; 0.751563672754566; 1" values="4; 4; 4; 4; 4" begin="-0.00002" dur="11.991039999999998" fill="freeze" calcMode="spline" keySplines="0 0 1 1; 0 0 1 1; 0 0 1 1; 0 0 1 1" repeatCount="indefinite">
+        </animate>
+        <animate attributeName="y1" keyTimes="0; 0.25018764073054794; 0.49920773913768657; 0.751563672754566; 1" values="196; 196; 196; 196; 196" begin="-0.00002" dur="11.991039999999998" fill="freeze" calcMode="spline" keySplines="0 0 1 1; 0 0 1 1; 0 0 1 1; 0 0 1 1" repeatCount="indefinite">
+        </animate>
+        <animate attributeName="x2" keyTimes="0; 0.25018764073054794; 0.49920773913768657; 0.751563672754566; 1" values="148.33998284682525; 52.2003177343413; 51.5046302365231; 52.2003177343413; 148.33998284682525" begin="-0.00002" dur="11.991039999999998" fill="freeze" calcMode="spline" keySplines="0 0 1 1; 0 0 1 1; 0 0 1 1; 0 0 1 1" repeatCount="indefinite">
+        </animate>
+        <animate attributeName="y2" keyTimes="0; 0.25018764073054794; 0.49920773913768657; 0.751563672754566; 1" values="147.99076944368335; 148.59823836741657; 52.2502015946428; 148.59823836741657; 147.99076944368335" begin="-0.00002" dur="11.991039999999998" fill="freeze" calcMode="spline" keySplines="0 0 1 1; 0 0 1 1; 0 0 1 1; 0 0 1 1" repeatCount="indefinite">
+        </animate>
+    </line>
+    <ellipse fill="rgb(12, 152, 255)" stroke="rgb(32, 32, 32)" stroke-width="1" cx="142.83077" cy="144.87694" rx="5" ry="5">
+        <animate attributeName="cx" keyTimes="0; 0.25018764073054794; 0.49920773913768657; 0.751563672754566; 1" values="148; 52; 52.0001; 52; 148" begin="-0.00002" dur="11.991039999999998" fill="freeze" calcMode="spline" keySplines="0 0 1 1; 0 0 1 1; 0 0 1 1; 0 0 1 1" repeatCount="indefinite">
+        </animate>
+        <animate attributeName="cy" keyTimes="0; 0.25018764073054794; 0.49920773913768657; 0.751563672754566; 1" values="148; 148; 51.9999; 148; 148" begin="-0.00002" dur="11.991039999999998" fill="freeze" calcMode="spline" keySplines="0 0 1 1; 0 0 1 1; 0 0 1 1; 0 0 1 1" repeatCount="indefinite">
+        </animate>
+    </ellipse>
+    <ellipse fill="rgb(12, 152, 255)" stroke="rgb(32, 32, 32)" stroke-width="1" cx="52" cy="41" rx="5" ry="5">
+        <animate attributeName="cx" keyTimes="0; 0.25018764073054794; 0.49920773913768657; 0.751563672754566; 1" values="51.9999; 148; 148.479; 148; 51.9999" begin="-0.00002" dur="11.991039999999998" fill="freeze" calcMode="spline" keySplines="0 0 1 1; 0 0 1 1; 0 0 1 1; 0 0 1 1" repeatCount="indefinite">
+        </animate>
+        <animate attributeName="cy" keyTimes="0; 0.25018764073054794; 0.49920773913768657; 0.751563672754566; 1" values="52; 52; 148; 52; 52" begin="-0.00002" dur="11.991039999999998" fill="freeze" calcMode="spline" keySplines="0 0 1 1; 0 0 1 1; 0 0 1 1; 0 0 1 1" repeatCount="indefinite">
+        </animate>
+    </ellipse>
+    <path d="M 196 4 C 47.5692 33.0462 155.3850766754884 150.95391103678452 4 196" stroke-width="1" stroke="rgb(12, 152, 255)" fill="none">
+        <animate attributeName="d" keyTimes="0; 0.25018764073054794; 0.49920773913768657; 0.751563672754566; 1" values="M 196 4 C 52.9793 51.2087 147.94976266166782 148.3065324608057 4 196; M 196 4 C 148.435 51.8883 52.48675030415054 148.21388315901646 4 196; M 196 4 C 148.783 148.227 51.79115846422046 51.8661744897267 4 196; M 196 4 C 148.435 51.8883 52.48675030415054 148.21388315901646 4 196; M 196 4 C 52.9793 51.2087 147.94976266166782 148.3065324608057 4 196" begin="-0.00002" dur="11.991039999999998" fill="freeze" calcMode="spline" keySplines="0 0 1 1; 0 0 1 1; 0 0 1 1; 0 0 1 1" repeatCount="indefinite">
+        </animate>
+    </path>
+    <line stroke="#6B67FD" stroke-width="1" x1="4" y1="4" x2="196" y2="196" opacity="0" id="line-wqETZFYi8xMwZWjz5LW3Cn">
+    </line>
+    <line stroke="#6B67FD" stroke-width="1" x1="196" y1="100" x2="100" y2="196" opacity="0" id="line-koakj4LbEbDLueyEk6aLEz">
+    </line>
+    <line stroke="#6B67FD" stroke-width="1" x1="100" y1="4" x2="4" y2="100" opacity="0" id="line-cLXuVipRQNw4ddceFU4GVx">
+    </line>
+    <line stroke="#6B67FD" stroke-width="1" x1="4" y1="100" x2="100" y2="196" opacity="0" id="line-4qbYLRJ9BKYV4aJLJHNrCa">
+    </line>
+    <line stroke="#6B67FD" stroke-width="1" x1="100" y1="4" x2="196" y2="100" opacity="0" id="line-vQfcpmfp6X1PQUbYrh7jrv">
+    </line>
+</svg>
