@@ -248,6 +248,15 @@ function fetchThreats() {
         `;
     };
 
+    // The GitHub feed only ever returns English repo names/descriptions
+    // (it's live third-party data, not translatable). Mixing that English
+    // text into the Persian UI is exactly the "mixed titles" bug, so
+    // Persian mode always uses the localized static fallback list instead.
+    if (currentLang === 'fa') {
+        renderHtml(fallbackItems);
+        return;
+    }
+
     if (cachedThreats) {
         let itemsHTML = '';
         cachedThreats.forEach(repo => {
@@ -621,8 +630,8 @@ async function loadLeaderboard() {
         pageLength: 10,
         responsive: true,
         order: [[3, 'desc']], // Order by date descending
-        language: {
-            search: "Search / جستجو:",
+        language: currentLang === 'fa' ? {
+            search: "جستجو:",
             lengthMenu: "نمایش _MENU_ رکورد",
             info: "نمایش _START_ تا _END_ از _TOTAL_ رکورد",
             paginate: {
@@ -630,6 +639,16 @@ async function loadLeaderboard() {
                 last: "آخر",
                 next: "بعدی",
                 previous: "قبلی"
+            }
+        } : {
+            search: "Search:",
+            lengthMenu: "Show _MENU_ entries",
+            info: "Showing _START_ to _END_ of _TOTAL_ entries",
+            paginate: {
+                first: "First",
+                last: "Last",
+                next: "Next",
+                previous: "Previous"
             }
         }
     });
