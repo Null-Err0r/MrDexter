@@ -13,7 +13,7 @@ AI Systems Security
 <h4 align="center" dir="rtl">راهنمای جامع، تعاملی و دوزبانه برای آسیب‌پذیری‌های مدل‌های زبانی بزرگ (LLM) و امنیت هوش مصنوعی.</h4>
 
 <p align="center">
-  <strong>Live Demo / مشاهده سایت: <a href="https://mrdexter.ir/">mrdexter.ir</a></strong>
+  <strong><a href="https://mrdexter.ir/">mrdexter.ir</a></strong>
 </p>
 
 ---
