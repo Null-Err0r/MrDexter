@@ -249,6 +249,33 @@ body[dir="ltr"] .sidebar { left: 0; border-right: 1px solid var(--card-border); 
     color: var(--primary-color);
 }
 
+/* Live Search */
+.search-container {
+    padding: 0 10px 15px 10px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px 15px;
+    background: rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--card-border);
+    border-radius: 8px;
+    color: var(--text-color);
+    font-family: inherit;
+    font-size: 0.95rem;
+    outline: none;
+    transition: all 0.3s;
+}
+
+[data-theme="dark"] .search-input {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.search-input:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 10px var(--primary-glow);
+}
+
 /* Main Content */
 .main-content {
     flex: 1;

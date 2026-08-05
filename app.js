@@ -96,6 +96,11 @@ function renderApp() {
             el.innerHTML = data[key];
         }
     });
+
+    const searchInput = document.getElementById('searchInput');
+    if (searchInput) {
+        searchInput.placeholder = currentLang === 'fa' ? 'جستجو...' : 'Search...';
+    }
     
     // Render Navigation
     navList.innerHTML = '';
@@ -216,13 +221,13 @@ function fetchThreats() {
     if (!container) return;
 
     const tData = contentData[currentLang].ticker || {};
-    const headerTitle = tData.header_title || 'LIVE THREAT INTEL';
-    const alertLabel = tData.alert_label || 'LLM Vulnerability Alert';
-    const detailsLabel = tData.details_label || '[Details]';
+    const headerTitle = tData.header_title || (currentLang === 'fa' ? 'اطلاعات تهدیدات زنده' : 'LIVE THREAT INTEL');
+    const alertLabel = tData.alert_label || (currentLang === 'fa' ? 'هشدار آسیب‌پذیری LLM' : 'LLM Vulnerability Alert');
+    const detailsLabel = tData.details_label || (currentLang === 'fa' ? '[جزئیات]' : '[Details]');
     const dir = currentLang === 'fa' ? 'rtl' : 'ltr';
     
     const fallbackItems = `
-        <div class="ticker-item"><i class="fa-solid fa-triangle-exclamation"></i> ${tData.fallback_1 || ''}</div>
+        <div class="ticker-item"><i class="fa-solid fa-triangle-exclamation"></i> ${tData.fallback_1 || (currentLang === 'fa' ? 'خطا در دریافت' : 'Error fetching')}</div>
         <div class="ticker-item"><i class="fa-solid fa-triangle-exclamation"></i> ${tData.fallback_2 || ''}</div>
         <div class="ticker-item"><i class="fa-solid fa-triangle-exclamation"></i> ${tData.fallback_3 || ''}</div>
     `;
