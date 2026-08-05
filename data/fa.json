@@ -84,12 +84,16 @@
         "External_APIs": "APIهای خارجی",
         "User_Input": "ورودی کاربر"
     },
+    "search_placeholder": "جستجو...",
     "ticker": {
         "header_title": "هشدار زنده",
         "alert_label": "هشدار آسیب‌پذیری هوش مصنوعی",
         "details_label": "[جزئیات]",
         "fallback_1": "CVE-2024-34359: جعل درخواست سمت سرور در LlamaIndex",
+        "fallback_1_url": "https://nvd.nist.gov/vuln/detail/CVE-2024-34359",
         "fallback_2": "CVE-2023-29374: تزریق پرامپت در LangChain",
-        "fallback_3": "CVE-2024-XXXX: اجرای کد از راه دور در DeepEval"
+        "fallback_2_url": "https://nvd.nist.gov/vuln/detail/CVE-2023-29374",
+        "fallback_3": "CVE-2024-XXXX: اجرای کد از راه دور در DeepEval",
+        "fallback_3_url": "https://github.com/confident-ai/deepeval/security/advisories"
     }
 }

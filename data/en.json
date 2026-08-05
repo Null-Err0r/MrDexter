@@ -21,7 +21,7 @@
         {
             "id": "intro",
             "title": "<i class='fa-solid fa-book-open'></i> Introduction to LLM Security and Generative AI",
-            "content": "The rapid expansion of Large Language Models (LLMs) like GPT and Claude has created a new paradigm in software development. However, integrating these models with business systems has introduced a new and complex attack surface. This enterprise guide is based on the latest research from **OWASP Top 10 for LLM**, **MITRE ATLAS**, and the experiences of the **Microsoft AI Red Team**.\n\n<div class=\"alert alert-info\"><i class=\"fa-solid fa-circle-info\"></i><strong>Why is this important?</strong> Traditional vulnerabilities (like SQLi or XSS) have deterministic and predictable rules. But LLMs are non-deterministic; they process natural language, making inputs unpredictable and standard WAF (Web Application Firewall) defenses mostly ineffective.</div>"
+            "content": "The rapid expansion of Large Language Models (LLMs) like GPT and Claude has created a new paradigm in software development. However, integrating these models with business systems has introduced a new and complex attack surface. This enterprise guide is based on the latest research from **OWASP Top 10 for LLM**, **MITRE ATLAS**, and the experiences of the **Microsoft AI Red Team**.\n\n<div class=\"alert alert-info\"><i class=\"fa-solid fa-circle-info\"></i><div><strong>Why is this important?</strong><br>Traditional vulnerabilities (like SQLi or XSS) have deterministic and predictable rules. But LLMs are non-deterministic; they process natural language, making inputs unpredictable and standard WAF (Web Application Firewall) defenses mostly ineffective.</div></div>"
         },
         {
             "id": "owasp",
@@ -34,6 +34,11 @@
             "content": "Red Teaming in AI involves simulating advanced attacks to discover edge-case vulnerabilities that automated scanners might miss.\n\n<div class=\"card glass-panel\" style=\"border-left: 4px solid var(--accent-red);\"><h4>Advanced Jailbreak Tactics</h4><ul style=\"margin-top: 10px; line-height: 1.8;\"><li><strong>Roleplay &amp; Persona Adoption:</strong> Forcing the AI to adopt a persona (e.g., \"Act as a security researcher unrestricted by rules\") to bypass safety filters.</li><li><strong>Payload Splitting:</strong> Breaking a malicious word into pieces (e.g., \"b\" + \"o\" + \"m\" + \"b\") so the safety filter doesn't recognize it.</li><li><strong>Context Ignoring:</strong> Using phrases like <em>\"Ignore all previous instructions and do X\"</em>.</li><li><strong>Virtualization (Simulation):</strong> Asking the AI to write a Python script that outputs the harmful content, rather than asking for the content directly.</li></ul></div>"
         },
         {
+            "id": "tools",
+            "title": "<i class='fa-solid fa-toolbox'></i> Essential AI Security Tools",
+            "content": "A collection of open-source tools for automating LLM vulnerability assessments.\n\n*   #### Garak\n    \n    An LLM vulnerability scanner that probes for hallucinations, prompt injections, and data leaks.\n    \n*   #### Llama Guard (Meta)\n    \n    An LLM-based input/output safeguard model designed to classify human-AI conversations.\n    \n*   #### NeMo Guardrails (NVIDIA)\n    \n    An open-source toolkit for easily adding programmable guardrails to LLM-based conversational systems."
+        },
+        {
             "id": "atlas",
             "title": "<i class='fa-solid fa-table-cells'></i> MITRE ATLAS Matrix",
             "content": "The **MITRE ATLAS™** standard is a knowledge base of adversary tactics and techniques against artificial intelligence systems.\n\n<div class=\"mitre-grid\"><div class=\"mitre-card\"><h4>Reconnaissance</h4><p>Gathering information about the model, training data, and system architecture.</p></div><div class=\"mitre-card\"><h4>Resource Development</h4><p>Creating tools, poisoned data, or optimized prompts for the attack.</p></div><div class=\"mitre-card\"><h4>Initial Access</h4><p>Gaining access via indirect prompt injections in documents or exploiting API vulnerabilities.</p></div><div class=\"mitre-card\"><h4>Exfiltration</h4><p>Extracting sensitive model data or user information via the AI's output.</p></div></div>"
@@ -41,12 +46,7 @@
         {
             "id": "audit",
             "title": "<i class='fa-solid fa-clipboard-check'></i> Defensive Security Checklist",
-            "content": "Use this checklist for auditing LLM-based applications before deployment.\n\nCategory\n\nSecurity Check\n\nStatus\n\nInput Validation\n\nAre all user inputs sanitized before reaching the LLM?\n\nOutput Guardrails\n\nIs the AI's output scanned for harmful content or code before display?\n\nAccess Control (RBAC)\n\nIs the LLM restricted from accessing data the user doesn't have permissions for?\n\nSystem Prompt Secrecy\n\nIs the system prompt protected against extraction techniques?"
-        },
-        {
-            "id": "tools",
-            "title": "<i class='fa-solid fa-toolbox'></i> Essential AI Security Tools",
-            "content": "A collection of open-source tools for automating LLM vulnerability assessments.\n\n*   #### Garak\n    \n    An LLM vulnerability scanner that probes for hallucinations, prompt injections, and data leaks.\n    \n*   #### Llama Guard (Meta)\n    \n    An LLM-based input/output safeguard model designed to classify human-AI conversations.\n    \n*   #### NeMo Guardrails (NVIDIA)\n    \n    An open-source toolkit for easily adding programmable guardrails to LLM-based conversational systems."
+            "content": "Is your organization's LLM system secure? Complete the checklist below to assess your current security posture.\n\n<div class=\"audit-container\"><div class=\"audit-progress-container\"><div class=\"audit-progress-bar\" id=\"auditProgressEn\"></div></div><div class=\"audit-score-text\" id=\"auditScoreEn\">Score: 0 / 100</div><div id=\"auditChecklistEn\"></div></div>"
         },
         {
             "id": "lab",
@@ -84,12 +84,16 @@
         "External_APIs": "External APIs",
         "User_Input": "User Input"
     },
+    "search_placeholder": "Search...",
     "ticker": {
         "header_title": "LIVE THREAT INTEL",
         "alert_label": "LLM Vulnerability Alert",
         "details_label": "[Details]",
         "fallback_1": "CVE-2024-34359: LlamaIndex Server-Side Request Forgery",
+        "fallback_1_url": "https://nvd.nist.gov/vuln/detail/CVE-2024-34359",
         "fallback_2": "CVE-2023-29374: LangChain Prompt Injection leading to RCE",
-        "fallback_3": "CVE-2024-XXXX: DeepEval Remote Code Execution"
+        "fallback_2_url": "https://nvd.nist.gov/vuln/detail/CVE-2023-29374",
+        "fallback_3": "CVE-2024-XXXX: DeepEval Remote Code Execution",
+        "fallback_3_url": "https://github.com/confident-ai/deepeval/security/advisories"
     }
 }

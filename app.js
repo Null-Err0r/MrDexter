@@ -97,10 +97,12 @@ function renderApp() {
         }
     });
 
-    const searchInput = document.getElementById('searchInput');
-    if (searchInput) {
-        searchInput.placeholder = currentLang === 'fa' ? 'جستجو...' : 'Search...';
-    }
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+        const key = el.getAttribute('data-i18n-placeholder');
+        if (data[key]) {
+            el.placeholder = data[key];
+        }
+    });
     
     // Render Navigation
     navList.innerHTML = '';
@@ -226,11 +228,17 @@ function fetchThreats() {
     const detailsLabel = tData.details_label || (currentLang === 'fa' ? '[جزئیات]' : '[Details]');
     const dir = currentLang === 'fa' ? 'rtl' : 'ltr';
     
-    const fallbackItems = `
-        <div class="ticker-item"><i class="fa-solid fa-triangle-exclamation"></i> ${tData.fallback_1 || (currentLang === 'fa' ? 'خطا در دریافت' : 'Error fetching')}</div>
-        <div class="ticker-item"><i class="fa-solid fa-triangle-exclamation"></i> ${tData.fallback_2 || ''}</div>
-        <div class="ticker-item"><i class="fa-solid fa-triangle-exclamation"></i> ${tData.fallback_3 || ''}</div>
-    `;
+    const fallbackLink = (text, url) => {
+        if (!text) return '';
+        const link = url ? ` <a href="${url}" target="_blank" rel="noopener noreferrer">${detailsLabel}</a>` : '';
+        return `<div class="ticker-item"><i class="fa-solid fa-triangle-exclamation"></i> ${text}${link}</div>`;
+    };
+
+    const fallbackItems = [
+        fallbackLink(tData.fallback_1 || (currentLang === 'fa' ? 'خطا در دریافت' : 'Error fetching'), tData.fallback_1_url),
+        fallbackLink(tData.fallback_2, tData.fallback_2_url),
+        fallbackLink(tData.fallback_3, tData.fallback_3_url)
+    ].join('');
 
     const renderHtml = (itemsHTML) => {
         container.innerHTML = `
@@ -260,7 +268,7 @@ function fetchThreats() {
     if (cachedThreats) {
         let itemsHTML = '';
         cachedThreats.forEach(repo => {
-            itemsHTML += `<div class="ticker-item"><i class="fa-solid fa-triangle-exclamation"></i> ${repo.name}: ${repo.description ? repo.description.substring(0, 50) + '...' : alertLabel} <a href="${repo.html_url}" target="_blank">${detailsLabel}</a></div>`;
+            itemsHTML += `<div class="ticker-item"><i class="fa-solid fa-triangle-exclamation"></i> ${repo.name}: ${repo.description ? repo.description.substring(0, 50) + '...' : alertLabel} <a href="${repo.html_url}" target="_blank" rel="noopener noreferrer">${detailsLabel}</a></div>`;
         });
         renderHtml(itemsHTML);
         return;
@@ -273,7 +281,7 @@ function fetchThreats() {
                 cachedThreats = data.items;
                 let itemsHTML = '';
                 cachedThreats.forEach(repo => {
-                    itemsHTML += `<div class="ticker-item"><i class="fa-solid fa-triangle-exclamation"></i> ${repo.name}: ${repo.description ? repo.description.substring(0, 50) + '...' : alertLabel} <a href="${repo.html_url}" target="_blank">${detailsLabel}</a></div>`;
+                    itemsHTML += `<div class="ticker-item"><i class="fa-solid fa-triangle-exclamation"></i> ${repo.name}: ${repo.description ? repo.description.substring(0, 50) + '...' : alertLabel} <a href="${repo.html_url}" target="_blank" rel="noopener noreferrer">${detailsLabel}</a></div>`;
                 });
                 renderHtml(itemsHTML);
             } else {
