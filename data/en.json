@@ -1,10 +1,10 @@
 {
     "title": "Mr. SAM",
     "sidebar_title": "AI Security",
-    "sidebar_subtitle": "Comprehensive OWASP & Red Teaming Guide",
+    "sidebar_subtitle": "OWASP & Red Teaming",
     "compiled_by": "Compiled & Developed by:",
     "main_heading": "Comprehensive Guide to LLM Security & Vulnerabilities",
-    "main_subheading": "A specialized, bilingual enterprise platform for AI and Cybersecurity engineers.",
+    "main_subheading": "A specialized enterprise platform for AI engineers.",
     "footer_text": "❤️",
     "nav_intro": "Introduction & Overview",
     "nav_owasp": "OWASP Vulnerabilities",

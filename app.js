@@ -256,14 +256,6 @@ function fetchThreats() {
         `;
     };
 
-    // The GitHub feed only ever returns English repo names/descriptions
-    // (it's live third-party data, not translatable). Mixing that English
-    // text into the Persian UI is exactly the "mixed titles" bug, so
-    // Persian mode always uses the localized static fallback list instead.
-    if (currentLang === 'fa') {
-        renderHtml(fallbackItems);
-        return;
-    }
 
     if (cachedThreats) {
         let itemsHTML = '';
@@ -274,7 +266,7 @@ function fetchThreats() {
         return;
     }
 
-    fetch('https://api.github.com/search/repositories?q=CVE+LLM&sort=updated&per_page=5')
+    fetch('https://api.github.com/search/repositories?q=CVE+OR+vulnerability+LLM+OR+AI+in:description,readme&sort=stars&order=desc&per_page=5')
         .then(response => response.json())
         .then(data => {
             if(data && data.items) {

@@ -1,10 +1,10 @@
 {
     "title": "Mr. SAM",
     "sidebar_title": "امنیت هوش مصنوعی",
-    "sidebar_subtitle": "مرجع جامع OWASP و Red Teaming",
+    "sidebar_subtitle": "OWASP و Red Teaming",
     "compiled_by": "گردآوری و توسعه:",
-    "main_heading": "راهنمای جامع امنیت و آسیب‌پذیری‌های LLM",
-    "main_subheading": "یک پلتفرم تخصصی، دوزبانه و سازمانی برای مهندسان هوش مصنوعی و امنیت سایبری.",
+    "main_heading": "راهنمای امنیت و آسیب‌پذیری‌های LLM",
+    "main_subheading": "یک پلتفرم تخصصی و سازمانی برای مهندسان هوش مصنوعی.",
     "footer_text": "❤️",
     "nav_intro": "مقدمه و کلیات",
     "nav_owasp": "آسیب‌پذیری‌های OWASP",
@@ -86,7 +86,7 @@
     },
     "search_placeholder": "جستجو...",
     "ticker": {
-        "header_title": "هشدار زنده",
+        "header_title": "آسیب پذیری های اخیر",
         "alert_label": "هشدار آسیب‌پذیری هوش مصنوعی",
         "details_label": "[جزئیات]",
         "fallback_1": "CVE-2024-34359: جعل درخواست سمت سرور در LlamaIndex",
